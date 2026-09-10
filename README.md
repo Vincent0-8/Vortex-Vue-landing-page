@@ -1,17 +1,13 @@
-# ⚡ Vortex — Modern SaaS Landing Page (Vue 3 + Tailwind CSS v4)
+# Vortex — Modern SaaS Landing Page (Vue 3 + Tailwind CSS v4)
+# Live Demo: 
+
+---
 
 A high-performance, responsive SaaS landing page built with **Vue 3 (Composition API `<script setup>`)**, **Tailwind CSS v4**, and **Vite**. Modeled with modern dark-mode developer-focused aesthetics (inspired by Linear, Nova, and Haven).
 
 ---
 
-## 📖 Learning Notes & Study Guide
-
-Untuk panduan lengkap belajar Vue 3 dari nol, pemahaman Single File Component (SFC), perbandingan Vue vs React, Vue+Vite vs Nuxt, kamus sintaks, serta contekan wawancara kerja (*interview cheatsheet*), buka file:
-👉 **[LEARNING_NOTE.md](./LEARNING_NOTE.md)**
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Vue 3](https://vuejs.org/) (`<script setup>`, Composition API)
 - **Build Tool**: [Vite](https://vitejs.dev/)
@@ -21,7 +17,7 @@ Untuk panduan lengkap belajar Vue 3 dari nol, pemahaman Single File Component (S
 
 ---
 
-## 📁 Struktur Folder Proyek
+## Struktur Folder Proyek
 
 ```
 Vue-landing-page/
