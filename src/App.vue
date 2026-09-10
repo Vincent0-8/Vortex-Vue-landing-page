@@ -20,7 +20,9 @@ onMounted(() => {
     history.scrollRestoration = 'manual'
   }
   window.scrollTo(0, 0)
-  if (window.location.hash) {
+  if (window.location.pathname !== '/') {
+    history.replaceState(null, '', '/')
+  } else if (window.location.hash) {
     history.replaceState(null, '', window.location.pathname + window.location.search)
   }
 })
