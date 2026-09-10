@@ -1,52 +1,94 @@
-# Vortex — Modern SaaS Landing Page (Vue 3 + Tailwind CSS v4)
-# Live Demo: 
+# ⚡ Vortex — Modern SaaS Landing Page
+
+> A high-performance, developer-first SaaS landing page built with **Vue 3 (Composition API `<script setup>`)**, **Tailwind CSS v4**, and **Vite**. Modeled with sleek dark-mode aesthetics inspired by modern developer platforms like Linear, Nova, and Haven.
+
+🔗 **Live Demo**: [https://vortex-vue-landing-page.vercel.app/](https://vortex-vue-landing-page.vercel.app/)
 
 ---
 
-A high-performance, responsive SaaS landing page built with **Vue 3 (Composition API `<script setup>`)**, **Tailwind CSS v4**, and **Vite**. Modeled with modern dark-mode developer-focused aesthetics (inspired by Linear, Nova, and Haven).
+## ✨ Key Features
+
+- **Vue 3 Composition API**: Clean component architecture utilizing `<script setup>`, single-responsibility modules, and predictable one-way data flow (`defineProps`, `defineEmits`).
+- **Tailwind CSS v4 Engine**: Lightning-fast styling powered by the `@tailwindcss/vite` compiler with a minimal production CSS footprint (~42 kB).
+- **Interactive Feature Switcher**: Seamless tab transitions using Vue’s native `<Transition mode="out-in">` to eliminate layout shift.
+- **Teleported Modal Dialog**: Sign In / Sign Up authentication modal rendered directly into `<body>` via `<Teleport to="body">` with Esc-key dismiss and outside-click detection.
+- **Smooth Scroll Animations**: Lightweight viewport entrance animations powered by a native browser `IntersectionObserver` composable (`useScrollReveal.js`).
+- **Responsive & Accessible**: Mobile slide-out drawer, custom emerald focus rings, semantic HTML5 landmarks, and full keyboard accessibility.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework**: [Vue 3](https://vuejs.org/) (`<script setup>`, Composition API)
 - **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (`@tailwindcss/vite`)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Icons**: [Lucide Vue Next](https://lucide.dev/)
 - **Typography**: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ---
 
-## Struktur Folder Proyek
+## 🚀 Getting Started
+
+### 1. Clone repository
+```bash
+git clone https://github.com/Vincent0-8/Vortex-Vue-landing-page.git
+cd Vortex-Vue-landing-page
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start development server
+```bash
+npm run dev
+```
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 Vue-landing-page/
-├── LEARNING_NOTE.md            # 📚 Dokumen catatan belajar & interview preparation
-├── index.html                  # Pintu masuk HTML & Google Font
-├── vite.config.js              # Konfigurasi Vite & Tailwind CSS v4
+├── LEARNING_NOTE.md            # Study notes, Vue vs React, interview cheatsheet
+├── index.html                  # HTML entry point, SEO & Open Graph social metadata
+├── vite.config.js              # Vite & Tailwind CSS v4 compiler setup
 ├── public/
-│   ├── favicon.svg             # Favicon SVG modern
+│   ├── favicon.svg             # Official SVG brand mark
 │   └── images/
-│       └── dashboard-preview.jpg # Mockup dashboard resolusi tinggi
+│       └── dashboard-preview.jpg # High-res dashboard preview mockup
 └── src/
-    ├── main.js                 # Entry point Vue & import CSS
-    ├── App.vue                 # Root component yang merakit semua seksi
-    ├── assets/css/main.css     # Setup Tailwind v4 & keyframes animasi
+    ├── main.js                 # Vue entry point & stylesheet imports
+    ├── App.vue                 # Root layout orchestrator & modal state
+    ├── assets/css/main.css     # Tailwind v4 import & custom keyframe animations
     ├── composables/
-    │   └── useScrollReveal.js  # Native IntersectionObserver untuk animasi scroll
+    │   └── useScrollReveal.js  # Native IntersectionObserver scroll observer
     └── components/
         ├── layout/
-        │   ├── Navbar.vue      # Header navigasi & tombol auth
-        │   └── Footer.vue      # Footer multi-kolom
+        │   ├── Navbar.vue      # Sticky glassmorphism header & mobile drawer
+        │   └── Footer.vue      # Multi-column footer & system operational status
         ├── sections/
-        │   ├── HeroSection.vue        # Headline & dashboard preview
-        │   ├── LogoCloud.vue          # 6 Logo brand terpercaya
-        │   ├── SolutionsSection.vue   # 3 Kartu solusi
+        │   ├── HeroSection.vue        # Headline, CTA, and dashboard preview
+        │   ├── LogoCloud.vue          # Social proof partner logos
+        │   ├── SolutionsSection.vue   # 3 Core solution cards
         │   ├── FeatureTabsSection.vue # Interactive tab switcher (<Transition>)
-        │   ├── FeaturesSection.vue    # 3 Langkah How It Works
-        │   ├── TestimonialsSection.vue# Ulasan klien
-        │   ├── FaqSection.vue         # Accordion tanya-jawab
-        │   └── CtaSection.vue         # Banner konversi akhir
+        │   ├── FeaturesSection.vue    # 3-Step workflow
+        │   ├── TestimonialsSection.vue# User feedback and engineer quotes
+        │   ├── FaqSection.vue         # Smooth accordion collapse/expand
+        │   └── CtaSection.vue         # Final conversion card
         └── common/
-            └── AuthModal.vue          # Modal Sign In / Sign Up (<Teleport to="body">)
+            └── AuthModal.vue          # Teleported auth dialog (<Teleport to="body">)
 ```
+
+---
+
+## 📚 Study Guide & Interview Preparation
+
+For an in-depth breakdown of Vue 3 architecture, Vue vs React differences, Vite vs Nuxt tradeoffs, and 5 real frontend technical interview questions & answers, check out **[LEARNING_NOTE.md](./LEARNING_NOTE.md)**.
