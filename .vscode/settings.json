@@ -1,0 +1,6 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "vue": "html"
+  },
+  "tailwindCSS.lint.cssConflict": "ignore"
+}
