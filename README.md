@@ -1,6 +1,6 @@
 # Vortex — Modern SaaS Landing Page
 
-A high-performance, responsive developer platform landing page built with Vue 3, Tailwind CSS v4, and Vite. Designed with dark-mode developer aesthetics inspired by Linear, Nova, and Haven.
+A sleek, high-performance landing page for Vortex, a next-generation web deployment and cloud edge platform. Engineered with Vue 3 (Composition API), Vite, and Tailwind CSS v4, focusing on ultra-fast runtime performance, responsive design, and smooth interactive states.
 
 **Live Demo**: [https://vortex-vue-landing-page.vercel.app/](https://vortex-vue-landing-page.vercel.app/)
 
